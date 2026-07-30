@@ -2,439 +2,77 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Site</title>
 
-    <title>Práticas de JavaScript</title>
+  <!-- Fonts google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Icons BootStrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- css global -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <header class="header">
-
-        <div class="container">
-
-            <a href="#inicio" class="logo">JS</a>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#inicio">Início</a>
-                    </li>
-
-                    <li>
-                        <a href="#atividades">Atividades</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <section class="inicio" id="inicio">
-
-            <div class="container">
-
-                <p class="subtitulo">ATIVIDADES DE JAVASCRIPT</p>
-
-                <h1>
-                    Começando com
-                    <span>JavaScript</span>
-                </h1>
-
-                <p>
-                    Práticas sobre variáveis, condicionais,
-                    operadores e switch / case.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <section class="atividades" id="atividades">
-
-            <div class="container">
-
-                <h2>Atividades</h2>
-
-                <div class="lista-atividades">
-
-
-                    <!-- ATIVIDADE 01 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            01
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                IF / ELSE
-                            </p>
-
-                            <h3>
-                                Número positivo, negativo ou zero
-                            </h3>
-
-                            <p>
-                                Verifique se o número é positivo,
-                                negativo ou igual a zero.
-                            </p>
-
-                            <button onclick="atividade1()">
-                                Executar
-                            </button>
-
-                            <p id="resultado1" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 02 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            02
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                IF / ELSE
-                            </p>
-
-                            <h3>
-                                Verificar maioridade
-                            </h3>
-
-                            <p>
-                                Verifique se a pessoa é maior
-                                ou menor de idade.
-                            </p>
-
-                            <button onclick="atividade2()">
-                                Executar
-                            </button>
-
-                            <p id="resultado2" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 03 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            03
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                IF / ELSE
-                            </p>
-
-                            <h3>
-                                Número par ou ímpar
-                            </h3>
-
-                            <p>
-                                Utilize o operador % para descobrir
-                                se o número é par ou ímpar.
-                            </p>
-
-                            <button onclick="atividade3()">
-                                Executar
-                            </button>
-
-                            <p id="resultado3" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 04 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            04
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                IF / ELSE IF
-                            </p>
-
-                            <h3>
-                                Comparar dois números
-                            </h3>
-
-                            <p>
-                                Compare dois números e descubra
-                                qual deles é maior.
-                            </p>
-
-                            <button onclick="atividade4()">
-                                Executar
-                            </button>
-
-                            <p id="resultado4" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 05 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            05
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                IF ENCADEADO
-                            </p>
-
-                            <h3>
-                                Classificação de nota
-                            </h3>
-
-                            <p>
-                                Classifique a nota como baixa,
-                                média ou alta.
-                            </p>
-
-                            <button onclick="atividade5()">
-                                Executar
-                            </button>
-
-                            <p id="resultado5" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 06 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            06
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                IF ENCADEADO
-                            </p>
-
-                            <h3>
-                                Calculadora de IMC
-                            </h3>
-
-                            <p>
-                                Calcule o IMC e mostre
-                                sua classificação.
-                            </p>
-
-                            <button onclick="atividade6()">
-                                Executar
-                            </button>
-
-                            <p id="resultado6" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 07 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            07
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                SWITCH / CASE
-                            </p>
-
-                            <h3>
-                                Calculadora simples
-                            </h3>
-
-                            <p>
-                                Faça uma operação matemática
-                                utilizando switch.
-                            </p>
-
-                            <button onclick="atividade7()">
-                                Executar
-                            </button>
-
-                            <p id="resultado7" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 08 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            08
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                SWITCH / CASE
-                            </p>
-
-                            <h3>
-                                Dia da semana
-                            </h3>
-
-                            <p>
-                                Informe o dia da semana de acordo
-                                com o número escolhido.
-                            </p>
-
-                            <button onclick="atividade8()">
-                                Executar
-                            </button>
-
-                            <p id="resultado8" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 09 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            09
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                IF + %
-                            </p>
-
-                            <h3>
-                                Verificar múltiplos
-                            </h3>
-
-                            <p>
-                                Verifique se um número é
-                                múltiplo de outro.
-                            </p>
-
-                            <button onclick="atividade9()">
-                                Executar
-                            </button>
-
-                            <p id="resultado9" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ATIVIDADE 10 -->
-
-                    <article class="card">
-
-                        <div class="numero">
-                            10
-                        </div>
-
-                        <div>
-
-                            <p class="tipo">
-                                IF / ELSE
-                            </p>
-
-                            <h3>
-                                Sistema de login
-                            </h3>
-
-                            <p>
-                                Verifique se o usuário e a
-                                senha estão corretos.
-                            </p>
-
-                            <button onclick="atividade10()">
-                                Executar
-                            </button>
-
-                            <p id="resultado10" class="resultado"></p>
-
-                        </div>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div class="container">
-
-            <p>
-                © 2026 Cristine Santos. Todos os direitos reservados.
-            </p>
-
-            <p>
-                Práticas de JavaScript
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <script src="praticando.js"></script>
-
+  <a href="#conteudo" class="skip-link"> Pular para o conteúdo principal</a>
+
+  <header>
+    <div class="container">
+      <div class="header">
+
+        <h1><a href="/">Logo</a></h1>
+
+        <button type="button" aria-label="Abrir Menu" aria-expanded="false" aria-controls="navegacao-primaria"
+          id="btn-menu">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+
+        <nav id="navegacao-primaria" aria-label="Menu principal">
+          <ul>
+            <li><a href="#">Ínicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="todo-section">
+      <div class="container">
+
+        <article class="todo-card">
+          <header>
+            <h2>Lista de tarefas</h2>
+            <p>Adicione suas tarefas do dia</p>
+          </header>
+
+          <form class="todo-form" id="todo-form">
+            <label for="tarefa" class="sr-only">Nova Tarefa</label>
+            <input type="text" placeholder="Digite uma tarefa..." id="tarefa" autocomplete="off">
+
+            <button type="submit">Adicionar</button>
+          </form>
+
+          <ul class="todo-list" id="todo-list">
+          </ul>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/menu-hamburguer.js"></script>
+  <script src="./js/fundo-aleatorio.js"></script>
+  <script src="./js/todo-list.js"></script>
 </body>
 
 </html>
